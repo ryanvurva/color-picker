@@ -1,8 +1,109 @@
 html {
-  text-size-adjust: 100%;
+  height: 100%
 }
 
 body {
-  margin: 0;
-  font: 16px / 1 sans-serif;
+min-height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column;
+font-family: 'Cabin', sans-serif;
+}
+
+.colorpicker {
+  background-color: hsl(240, 0%, 80%);
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 5px;
+  margin: auto;
+}
+
+h1 {
+  margin: 0 auto 30px auto;
+  text-align: center;
+
+}
+
+.hue {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sat {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.light {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.alpha {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.colorpicker p {
+  margin: 0 auto 0 20px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 10px;
+  color: hsl(0, 0%, 36%);
+}
+
+.button {
+  color: #fff;
+  background-color: hsl(0, 0%, 36%);
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.sliders {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  margin: 0 20px 0 20px;
+}
+
+.sliders input {
+  margin: 20px;
+}
+
+.colordisplay {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.colordisplay .colorbox {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: #ccc;
+    border: 4px solid hsl(0, 0%, 36%);
+    border-radius: 5px;
 }
